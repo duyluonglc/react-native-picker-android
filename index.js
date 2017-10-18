@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component, ViewPropTypes, TextPropTypes} from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {
 	StyleSheet,
@@ -9,7 +9,9 @@ import {
 	Image,
 	Dimensions,
 	PixelRatio,
-	PanResponder
+	PanResponder,
+	ViewPropTypes,
+	TextPropTypes
 } from 'react-native';
 
 class PickerAndroidItem extends Component{
