@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component} from 'react';
+import React, {Component, ViewPropTypes, TextPropTypes} from 'react';
 import PropTypes from 'prop-types';
 import {
 	StyleSheet,
@@ -35,9 +35,9 @@ export default class PickerAndroid extends Component{
 
 	static propTypes = {
 		//picker's style
-		pickerStyle: View.propTypes.style,
+		pickerStyle: ViewPropTypes.style,
 		//picker item's style
-		itemStyle: Text.propTypes.style,
+		itemStyle: TextPropTypes.style,
 		//picked value changed then call this function
 		onValueChange: PropTypes.func,
 		//default to be selected value
