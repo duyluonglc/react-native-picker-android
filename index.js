@@ -11,7 +11,7 @@ import {
 	PixelRatio,
 	PanResponder,
 	ViewPropTypes,
-	TextPropTypes
+	TextStylePropTypes
 } from 'react-native';
 
 class PickerAndroidItem extends Component{
@@ -39,7 +39,7 @@ export default class PickerAndroid extends Component{
 		//picker's style
 		pickerStyle: ViewPropTypes.style,
 		//picker item's style
-		itemStyle: TextPropTypes.style,
+		itemStyle: TextStylePropTypes,
 		//picked value changed then call this function
 		onValueChange: PropTypes.func,
 		//default to be selected value
